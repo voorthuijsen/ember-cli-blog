@@ -4,9 +4,9 @@ import computedFilterByQuery from 'ember-cli-filter-by-query/util/filter';
 
 export default Ember.Component.extend({
 
-  pagedContent: pagedArray("filteredContent", {pageBinding: "page", perPageBinding: "perPage"}),
+  pagedContent: pagedArray("filteredContent", {page: Ember.computed.alias("parent.page"), perPage: Ember.computed.alias("parent.perPage")}),
 
-  totalPagesBinding: "pagedContent.totalPages",
+  totalPages: Ember.computed.alias("pagedContent.totalPages"),
 
   postsSorting: ['date:desc'],
   arrangedContent: Ember.computed.sort('posts', 'postsSorting'),

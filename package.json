@@ -34,7 +34,7 @@
     "ember-cli-htmlbars-inline-precompile": "^0.3.5",
     "ember-cli-inject-live-reload": "^1.4.1",
     "ember-cli-jshint": "^1.0.0",
-    "ember-cli-pagination": "2.2.2",
+    "ember-cli-pagination": "https://github.com/mharris717/ember-cli-pagination.git#68fd53575a840ff1802105d226a98525bd389300",
     "ember-cli-qunit": "^3.0.0",
     "ember-cli-release": "0.2.9",
     "ember-cli-selectize": "0.5.5",

@@ -1,11 +1,14 @@
 import Ember from "ember";
 
+const { get, inject: {service} } = Ember;
+
 export default Ember.Controller.extend({
-	isSpinning: false,
-	
+	session: service(),
+  cloudState: service(),
+
 	actions:{
-	  kickSpin: function() {
-      this.set('isSpinning', true);
+    logout: function() {
+    	get(this, 'session').invalidate();
     }
   }
 });

@@ -10,6 +10,7 @@ Router.map(function() {
 	this.route('about');
 	this.route('secret');
 	this.route('login');
+  this.route('fixdata');
 	this.route('posts', function() {
 		this.route('post', { path: ':post_id', resetNamespace: true });
 	});
